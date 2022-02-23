@@ -1,0 +1,72 @@
+:root {
+  --D10: #162d3d;
+  --D20: #32536A;
+  --D40: #7a92a5;
+  --D60: #f0f4f7;
+
+  --B30: #c1e4fe;
+  --B40: #daeffe;
+  --B50: #eaf7ff;
+
+  --P10: #AA4DC8;
+  --P20: #CD68ED;
+
+  --sidebar-bg: #131720;
+
+  --main-blue-filter: invert(49%) sepia(83%) saturate(983%) hue-rotate(183deg) brightness(95%) contrast(95%);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+body * {
+  font-family: var(--wix-font-stack);
+  box-sizing: border-box;
+}
+
+
+
+.bm-template {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.white-icon {
+  filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(277deg) brightness(104%) contrast(99%);
+}
+
+.bm-container {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 48px);
+  overflow: hidden;
+  background: var(--D60);
+}
+
+.purple-btn {
+  background: var(--P10);
+  color: #fff;
+  outline: none;
+  border: 1px solid var(--P10);
+  height: 30px;
+  min-width: 72px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 17px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: var(--wsr-font-weight-medium, 500);
+  border-radius: var(--wsr-button-border-radius, 15px);
+  cursor: pointer;
+}
+
+.purple-btn:hover {
+  background: var(--P20);
+  border-color: var(--P20);
+}
+
+.pcu-button{
+  text-transform: capitalize;
+}

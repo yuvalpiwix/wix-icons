@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/jpg" href="https://wix-prototypers.github.io/prototypers_logo/favicon.ico">
+  <title>BM Template</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/wix-prototypers/prototypers_components-units@3/components-units_02/pcu-wsr/wsr_components.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/wix-prototypers/prototypers_prototype-panel@3.1/dist/prototypePanel.min.css">
+  <link rel="stylesheet" href="//static.parastorage.com/unpkg/@wix/wix-fonts@1.9.3/madefor.css">
+  <link rel="stylesheet" href="./css/general-style.css">
+  <link rel="stylesheet" href="./css/topbar.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/content.css">
+</head>
+
+<body>
+  <div class="bm-template">
+    <topbar class="bm-topbar">
+    </topbar>
+    <container class="bm-container">
+      <sidebar class="bm-sidebar"></sidebar>
+      <div class="sidebar-tooltip-container">
+        <div class="pcu-tooltip" dir="right" style="top: calc(249px + 10px);">
+          <div class="pcu-popover pcu-tooltip-content">
+            Enter your postal code, so postman can easier send you a mail.
+          </div>
+        </div>
+      </div>
+      <content id="page-stage" class="page-stage">
+        <releasesPanel id="releasesPanel">
+          <div>
+            <div>
+              <div style="font-size: 18px; color: #162D3D; line-height: 24px;">New Releases</div>
+              <div style="font-size: 14px; color: #32536A; line-height: 24px;">Product updates, personalized for you.</div>
+            </div>
+            <svg viewBox="0 0 8 8" fill="currentColor" width="12" height="12" data-hook="close-large">
+              <path d="M7.2 0L4 3.2 0.8 0 0.1 0.7 3.3 4 0 7.3 0.7 8 4 4.7 7.3 8 8 7.3 4.7 4 7.9 0.7z"></path>
+            </svg>
+          </div>
+          <img src="./images/topbar/new-releases-panel.png" alt="">
+        </releasesPanel>
+        <div class="page-header">
+        </div>
+        <div class="page-content">
+          <div class="page-card">
+            Some content card
+          </div>
+        </div>
+      </content>
+    </container>
+  </div>
+</body>
+
+<script src="./js/content-header.js"></script>
+<script src="./js/topbar.js"></script>
+<script src="./js/sidebar.js"></script>
+<script src="./js/bm-template.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/gh/wix-prototypers/prototypers_prototype-panel@3.1/dist/prototypePanel.min.js"></script>
+<!-- NOTE: This load is only for the template, you can delete this part after you called these init functions in your js file. -->
+<script>
+  window.onload = function (e) {
+    initTopbar(topbar);
+    initSidebar(sidebar);
+    initContentHeader(contentHeader)
+    initPrototypePanel(panelInfo);
+  };
+</script>
+
+</html>
