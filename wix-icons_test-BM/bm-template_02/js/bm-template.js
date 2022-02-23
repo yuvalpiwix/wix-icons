@@ -14,9 +14,9 @@ let topbar = {
   { name: "Explore", chevron: true, popoverSrc:"./images/topbar/explore-overlay.png", popoverBtn: "explore" },
   { name: "Help", popoverSrc:"./images/topbar/help-overlay.png", popoverBtn: "help" }],
   topbarIcons: [
-    { iconType: "chat", iconTooltip: "Inbox", popoverSrc:"./images/topbar/inbox-overlay.png", popoverBtn:"inbox" },
-    { iconType: "notification", iconTooltip: "Notification", popoverSrc:"./images/topbar/notification-overlay.png", popoverBtn:"notification" },
-    { iconType: "promote", iconTooltip: "New Releases", popoverBtn:"newReleases"}],
+    { iconType: "Chat", iconTooltip: "Inbox", popoverSrc:"./images/topbar/inbox-overlay.png", popoverBtn:"inbox" },
+    { iconType: "Notification", iconTooltip: "Notification", popoverSrc:"./images/topbar/notification-overlay.png", popoverBtn:"notification" },
+    { iconType: "Promote", iconTooltip: "New Releases", popoverBtn:"newReleases"}],
   // topbarProfileImg: "https://static.wixstatic.com/media/11062b_c1e15248e1ed41cdbbfff226cdc37975~mv2.jpg/v1/crop/x_744,y_0,w_2233,h_2240/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01/Model%20in%20Denim%20Shirt.webp",
   topbarProfileName: "John Doe", popoverBtn:"accountMenue"
 }

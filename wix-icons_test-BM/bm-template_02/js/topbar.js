@@ -9,7 +9,7 @@ function initTopbar(topbar) {
   topbar.topbarItems.forEach((item) => {
     topbarItems += `<div class="topbar-links-item ${item.class ? item.class : ``} popoverBtn" for="${item.popoverBtn}">
     <div>${item.name}</div>
-    ${item.chevron ? `<img class="chevron-down-icon" src="./images/topbar/chevron-down.svg"/>` : ``}
+    ${item.chevron ? `<i class="chevron-down-icon" icon="ChevronDown"></i>` : ``}
     <div id="${item.popoverBtn}" class="topbar-popovers topbar-links-item-popover" style="display:none"><img src="${item.popoverSrc}"/></div>
     </div>`
   });
@@ -26,7 +26,7 @@ function initTopbar(topbar) {
   topbar.topbarIcons.forEach((icon, index) => {
     topbarIcons +=
       `<div class="topbar-icon pcu-tooltip popoverBtn" dir="bottom" for="${icon.popoverBtn}">
-      <img src="./images/topbar/${icon.iconType}-icon.svg"/>
+      <i icon=${icon.iconType}></i>
       <div class="pcu-popover pcu-tooltip-content">
       ${icon.iconTooltip} 
       </div> 
@@ -35,7 +35,7 @@ function initTopbar(topbar) {
   });
   let topbarRightPart = `<div class="topbar-right-part">
   ${(topbar.topbarSearch == false) ? "" : `<div class="topbar-search">
-  <img src="./images/topbar/search-icon.svg"/>
+  <i icon="SearchSmall"></i>
   <input class="topbar-search-input" placeholder="Search for tools, apps, help & more..." style="text-overflow: clip;">
   </div>
   <span class="topbar-divider"></span>`}
@@ -47,7 +47,7 @@ function initTopbar(topbar) {
       `<div class="topbar-profile-img"><img src="./images/topbar/profile-img.svg"/></div>`
     }
   <span class="topbar-profile-name">${topbar.topbarProfileName}</span>
-  <img class="chevron-down-icon" src="./images/topbar/chevron-down.svg"/>
+  <i class="chevron-down-icon" icon="ChevronDown"></i>
   <div id="${topbar.popoverBtn}" class="topbar-popovers" style="display:none" ><img src="./images/topbar/account-menue.png"/></div>
   </div>
   </div>`;
