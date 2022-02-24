@@ -9,7 +9,7 @@ function initContentHeader(contentHeader) {
             if (i != (breadCrumbsArray.length) - 1) {
                 breadCrumbs +=
                     `<span class="breadcrumb-item">${breadCrumbsArray[i].name}</span>
-                <img class="breadcrumb-icon" src="./images/content/breadcrumb-icon.svg">`
+                <i class="breadcrumb-icon" icon="ChevronRightLarge"></i>`
             }
             // last breadcrumb without chevron
             else {
@@ -24,7 +24,7 @@ function initContentHeader(contentHeader) {
         `<div class="page-header-content">
         ${breadCrumbs ? `<div class="page-breadcrumb">${breadCrumbs}</div>` : ``}
         <span class="page-title">
-            ${contentHeader.title.backBtn ? `<img class="page-title-chevron" src="./images/content/left-chevr-icon.svg">` : ``}
+            ${contentHeader.title.backBtn ? `<span class="page-title-chevron"><i icon="ChevronLeftLarge"></i></span>` : ``}
             <label class="page-title-label">${contentHeader.title.name}</label>
         </span>
         ${contentHeader.title.descr ? `<span class="title-descr">${contentHeader.title.descr}</span>` : ``}
@@ -37,7 +37,7 @@ function initContentHeader(contentHeader) {
         contentHeader.actionsBtns.forEach((actionsBtn) => {
             let icon = "";
             let addClass = "";
-            let img = `<img src="${actionsBtn.iconUrl}">`;
+            let img = `<i icon="${actionsBtn.iconUrl}"></i>`;
             let text = `${actionsBtn.content}`;
             let size = "";
             let btnContent = "";

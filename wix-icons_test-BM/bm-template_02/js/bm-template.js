@@ -117,13 +117,13 @@ let contentHeader = {
       type: "regular-btn", content: "button", skin: "premium", priority: "primary"
     },
     {
-      type: "prefix-btn", content: "prefix", skin: "standard", priority: "secondary", iconUrl: "./images/sidebar/chevron-left.svg"
+      type: "prefix-btn", content: "prefix", skin: "standard", priority: "secondary", iconUrl: "ChevronLeft"
     },
     {
-      type: "suffix-btn", content: "suffix", skin: "standard", priority: "primary", iconUrl: "./images/topbar/search-icon.svg"
+      type: "suffix-btn", content: "suffix", skin: "standard", priority: "primary", iconUrl: "SearchSmall"
     },
     {
-      type: "icon-btn", size: "medium", skin: "light", priority: "primary", iconUrl: "./images/content/more-icon.svg"
+      type: "icon-btn", size: "medium", skin: "light", priority: "primary", iconUrl: "More"
     }
   ]
 }

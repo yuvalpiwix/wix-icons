@@ -51,7 +51,7 @@
   position: relative;
 }
 
-.topbar-links-item:hover div:first-child {
+.topbar-links-item:hover{
   filter: var(--main-blue-filter);
 }
 
@@ -89,7 +89,7 @@
   box-shadow: 0 0 0 3px #aadbfc;
 }
 
-.topbar-search img {
+.topbar-search i {
   filter: var(--main-blue-filter);
 }
 
@@ -128,13 +128,8 @@
   cursor: pointer;
 }
 
-.topbar-icon:hover > img {
+.topbar-icon:hover > i {
   filter: var(--blue-icon);
-}
-
-.pcu-tooltip img {
-  /* filter: var(--blue-icon); */
-  filter: none;
 }
 
 .pcu-tooltip .pcu-tooltip-content {

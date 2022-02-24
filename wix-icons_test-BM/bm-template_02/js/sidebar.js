@@ -12,7 +12,7 @@ function initSidebar(sidebar, visibleContect) {
         <span class="sidebar-setup-title">Set Up Your Site</span>
         <div class="sidebar-setup-title-descr">
           <span class="sidebar-setup-steps">3 steps left</span>
-          <img class="chevron-right-icon white-icon" src="./images/sidebar/chevron-right.svg"/>
+          <i class="chevron-right-icon white-icon" icon="ChevronRight"></i>
         </div>
       </div>
       <div class="sidebar-prog-circ-wrapper">
@@ -53,7 +53,7 @@ function initSidebar(sidebar, visibleContect) {
         items +=
           `<div class="sidebar-content-item collapsible" for="${sidebarItem.name}" tooltip=${sidebarItem.chevron ? "true" : "false"}>
               <div class="sidebar-item-text">${sidebarItem.name}</div>
-              ${sidebarItem.chevron ? `<img class="chevron-right-icon white-icon" src="./images/sidebar/chevron-right.svg"/>` : ``}
+              ${sidebarItem.chevron ? `<i class="chevron-right-icon white-icon" icon="ChevronRight"></i>` : ``}
           </div>
         ${sidebarItem.chevron ? drillinContent(drillinIndex) : ''}`
         // if chevron so create drilling content with the saven index
@@ -94,7 +94,7 @@ function initSidebar(sidebar, visibleContect) {
     </div>
     <span class="sidebar-divider"></span>
     <div class="sidebar-quick-access">
-      <img class="white-icon" src="./images/sidebar/quick-access-icon.svg"/>
+      <i class="white-icon" icon="QuickAccessSmall"></i>
       Quick Access
     </div>
   </div>`;

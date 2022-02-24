@@ -29,13 +29,13 @@ releasesPanel>img {
     border-top: 1px solid #DFE5EB;
 }
 
-#releasesPanel>div>svg {
-    color: #3899EC;
+releasespanel [icon="Dismiss"] {
+    filter: invert(59%) sepia(85%) saturate(3937%) hue-rotate(189deg) brightness(104%) contrast(85%);
+    cursor: pointer;
 }
 
-#releasesPanel>div>svg:hover {
-    cursor: pointer;
-    color: #4EB7F5
+releasespanel [icon="Dismiss"]:hover {
+    filter: invert(71%) sepia(19%) saturate(5613%) hue-rotate(174deg) brightness(101%) contrast(92%);
 }
 
 .page-stage {
@@ -117,10 +117,8 @@ releasesPanel>img {
 }
 
 .breadcrumb-icon {
-    width: 6px;
-    min-height: 30px;
-    margin: 0 8px;
-    opacity: 0.2;
+    width: 20px;
+    filter: invert(86%) sepia(9%) saturate(316%) hue-rotate(171deg) brightness(88%) contrast(93%);
 }
 
 .page-title {
@@ -144,22 +142,47 @@ releasesPanel>img {
 }
 
 .page-title-chevron {
-    display: block;
     width: 36px;
     height: 36px;
     position: relative;
-    left: -11px;
     cursor: pointer;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .page-title-chevron:hover {
     background-color: white;
 }
 
+.page-title-chevron i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(71%) sepia(19%) saturate(5613%) hue-rotate(174deg) brightness(101%) contrast(92%);
+}
+
 .page-header-actions {
     display: flex;
     align-items: end;
+}
+
+.pcu-button-affix[icon="prefix"] i {
+    filter: invert(50%) sepia(73%) saturate(1428%) hue-rotate(184deg) brightness(96%) contrast(93%);
+    margin: 0 6px 0 -6px;
+}
+
+.pcu-button-affix[icon="prefix"]:hover i {
+    filter: invert(96%) sepia(1%) saturate(3989%) hue-rotate(168deg) brightness(117%) contrast(101%);
+}
+
+.pcu-button-affix[icon="suffix"] i {
+    filter: invert(96%) sepia(1%) saturate(3989%) hue-rotate(168deg) brightness(117%) contrast(101%);
+    margin: 0px -6px 2px 6px;
+}
+
+.pcu-icon-button i[icon="More"]{
+    filter: invert(50%) sepia(73%) saturate(1428%) hue-rotate(184deg) brightness(96%) contrast(93%);
 }
 
 .page-header-actions button, .page-footer-actions button {
